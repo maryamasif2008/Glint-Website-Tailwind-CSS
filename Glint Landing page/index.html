@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glint Website</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Toggle the menu visibility on mobile
+        function toggleMenu() {
+            const menu = document.getElementById("mobile-menu");
+            menu.classList.toggle("hidden");
+        }
+    </script>
+</head>
+<body class="bg-black">
+
+    <!-- Header Section -->
+    <header class="bg-black text-white py-6">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Logo Section -->
+            <div class="flex items-center">
+                <img src="logo.png" alt="Glint Logo" class="w-15 h-12 mr-3"> <!-- Logo Image -->
+            </div>
+            <!-- Mobile Hamburger Icon -->
+            <button class="lg:hidden text-white" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <!-- Desktop Navigation Menu -->
+            <nav class="hidden lg:block hover:text-green-500">
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="hover:text-gray-200">Home</a></li>
+                    <li><a href="#about" class="hover:text-gray-200">About</a></li>
+                    <li><a href="#about" class="hover:text-gray-200">Portfolio</a></li>
+                    <li><a href="#contact" class="hover:text-gray-200">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <nav id="mobile-menu" class="lg:hidden hidden bg-black text-white py-4">
+        <ul class="flex flex-col items-center space-y-4">
+            <li><a href="#" class="hover:text-gray-200">Home</a></li>
+            <li><a href="#about" class="hover:text-gray-200">About</a></li>
+            <li><a href="#about" class="hover:text-gray-200">Portfolio</a></li>
+            <li><a href="#contact" class="hover:text-gray-200">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-cover bg-center h-screen relative" style="background: linear-gradient(to right, black);">
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+            <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center relative z-10">
+                <!-- Left Side Content -->
+                <div class="text-white w-full md:w-1/2 text-center md:text-left">
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold">
+                        <span class="text-green-500"><br><br>IMAGINATION</span> IS MORE<br> IMPORTANT THAN KNOWLEDGE
+                    </h2>
+                    <p class="mt-6 text-base sm:text-lg md:text-2xl">Together we the people achieve more than any single person <br> could ever do alone.</p>
+                    <button class="mt-8 px-6 py-3 bg-green-500 text-white hover:bg-black hover:text-green-500 hover:border-2 hover:border-green-500 rounded-[5px]">
+                        GETTING STARTED
+                    </button>
+                </div>
+        
+                <!-- Right Side Image -->
+                <div class="w-full md:w-1/2 mt-6 md:mt-0">
+                    <img src="https://img.freepik.com/premium-photo/adult-male-businessman-with-stubble-classic-suit-black-background_518914-10.jpg" alt="Business Male" class="w-full h-auto object-contain">
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- About Section -->
+        <section id="about" class="bg-black">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+                <!-- Left Side (Image) -->
+                <div class="flex-shrink-0 mb-8 md:mb-0">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTxJ7yNM3u0RVzzifrI_NberJF7UoPE8enNA&s" alt="Image" class="w-full md:w-90 h-auto md:h-80 rounded-lg">
+                </div>
+        
+                <!-- Right Side (Text) -->
+                <div class="md:ml-8 text-center md:text-left">
+                    <h2 class="text-3xl md:text-5xl font-bold text-white mt-4 md:mt-10">FAILURE IS A CONDIMENT THAT GIVES <span class="text-green-500">SUCCESS</span></h2>
+                    <p class="mt-6 md:mt-9 text-lg md:text-xl max-w-4xl mx-auto text-white">Spend more time focusing on the important aspects of your business. Turn to McCartney HR LLC in Brooklyn, NY for HR solutions. As an advanced virtual HR company, we are offering online HR systems that can be customized depending on your business needs.</p>
+                    <button class="mt-7 px-6 py-3 bg-green-500 text-white hover:bg-black hover:text-green-500 hover:border-2 hover:border-green-500 rounded-[5px]">
+                        DOWNLOAD CV
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+      <!-- Contact Section -->
+<section id="contact" class="py-16 bg-black">
+    <div class="ml-4 md:ml-20">
+        <h6 class="text-xl font-bold text-green-500">MY EXPERIENCE</h6>
+        <h2 class="text-3xl sm:text-4xl font-bold text-white">EXPERIENCE AND <span class="text-green-500">SKILLS</span></h2>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-black p-6 rounded-lg shadow-lg text-center text-white hover:bg-gray-700 transition duration-300 shadow-gray-600 shadow-md">
+            <h3 class="text-2xl font-semibold text-green-500">Web Development</h3>
+            <p class="mt-4">Expert in building responsive and modern websites using HTML, CSS, JavaScript, and frameworks like React and Vue.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-black p-6 rounded-lg shadow-lg text-center text-white hover:bg-gray-700 transition duration-300 shadow-gray-600 shadow-md">
+            <h3 class="text-2xl font-semibold text-green-500">UI/UX Design</h3>
+            <p class="mt-4">Skilled in designing user interfaces with a focus on user experience, using tools like Figma, Sketch, and Adobe XD.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-black p-6 rounded-lg shadow-lg text-center text-white hover:bg-gray-700 transition duration-300 shadow-gray-600 shadow-md">
+            <h3 class="text-2xl font-semibold text-green-500">Backend Development</h3>
+            <p class="mt-4">Experience in backend technologies like Node.js, Express, and databases like MongoDB and SQL.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-black p-6 rounded-lg shadow-lg text-center text-white hover:bg-gray-700 transition duration-300 shadow-gray-600 shadow-md">
+            <h3 class="text-2xl font-semibold text-green-500">Project Management</h3>
+            <p class="mt-4">Proficient in managing projects using Agile methodology, Jira, and ensuring seamless team collaboration.</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-16 bg-black">
+    <div class="flex flex-wrap justify-center items-center space-x-16 sm:space-x-8"> <!-- Adjusted gap for smaller screens -->
+        <!-- Circle 1 (60%) - Green Border -->
+        <div class="flex flex-col items-center mb-8 sm:mb-4"> <!-- Adjusted margin for smaller screens -->
+            <div class="flex justify-center items-center w-32 h-32 border-8 border-green-500 rounded-full text-white text-2xl font-semibold">
+                <span>60%</span>
+            </div>
+            <p class="text-white mt-4 text-2xl font-bold">BRANDING DESIGN</p>
+        </div>
+
+        <!-- Circle 2 (70%) - White Border -->
+        <div class="flex flex-col items-center mb-8 sm:mb-4"> <!-- Adjusted margin for smaller screens -->
+            <div class="flex justify-center items-center w-32 h-32 border-8 border-white rounded-full text-white text-2xl font-semibold">
+                <span>70%</span>
+            </div>
+            <p class="text-white mt-4 text-2xl font-bold">UI & UX DESIGN</p>
+        </div>
+
+        <!-- Circle 3 (30%) - Green Border -->
+        <div class="flex flex-col items-center mb-8 sm:mb-4"> <!-- Adjusted margin for smaller screens -->
+            <div class="flex justify-center items-center w-32 h-32 border-8 border-green-500 rounded-full text-white text-2xl font-semibold">
+                <span>30%</span>
+            </div>
+            <p class="text-white mt-4 text-2xl font-bold">WEB DESIGN</p>
+        </div>
+
+        <!-- Circle 4 (90%) - White Border -->
+        <div class="flex flex-col items-center mb-8 sm:mb-4"> <!-- Adjusted margin for smaller screens -->
+            <div class="flex justify-center items-center w-32 h-32 border-8 border-white rounded-full text-white text-2xl font-semibold">
+                <span>90%</span>
+            </div>
+            <p class="text-white mt-4 text-2xl font-bold">ILLUSTRATION</p>
+        </div>
+    </div>
+</section>
+        
+<section class="py-16 bg-black">
+    <div class="ml-20">
+        <h6 class="text-1xl font-bold text-green-500">WHAT WE DO</h6>
+        <h2 class="text-4xl font-bold text-white">SERVICE AND <span class="text-green-500">SOLUTIONS</span></h2>
+    </div>
+
+    <div class="container mx-auto mt-20 px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 text-center">
+                <h3 class="text-2xl font-bold text-green-500 mb-4">DESIGN PRINCIPLES</h3>
+                <p class="text-gray-400 mb-4 font-semibold text-1xl">Build Responsive And Modern Websites With HTML, CSS, JavaScript, And Frameworks Like React And Vue. Need A Project Completed By An Expert? Let’s Go!</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-green-500 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 text-center">
+                <h3 class="text-2xl font-bold text-white mb-4">UNIQUE VALUES</h3>
+                <p class="text-white mb-4 font-semibold text-1xl">Craft User-Friendly And Intuitive Interfaces Using Design Tools Like Figma, Sketch, And Adobe XD. Need A Project Completed By An Expert? Let’s Go!</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 text-center">
+                <h3 class="text-2xl font-bold text-green-500 mb-4">STYLE COMPONENTS</h3>
+                <p class="text-gray-400 mb-4 font-semibold text-1xl">Improve Website Visibility And Ranking With Strategic SEO Practices, Content Optimization, And Backlink Strategies. Need A Project Completed By An Expert? Let’s Go!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-16 bg-black">
+    <div class="ml-20">
+        <h6 class="text-1xl font-bold text-green-500">TESTIMONIALS</h6>
+        <h2 class="text-4xl font-bold text-white">HAPPY CLIENTS TO <span class="text-green-500">SAYS</span></h2>
+    </div>
+
+    <div class="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-between">
+        <!-- Left Side (Image) -->
+        <div class="flex-shrink-0">
+            <img src="testimonial1.jpg" alt="Image" class="mt-5 ml-20 w-24 h-24 rounded-full object-cover sm:ml-0 sm:w-32 sm:h-32">
+        </div>
+
+        <!-- Right Side (Text) -->
+        <div class="mt-5 sm:mt-0 sm:ml-8 text-center sm:text-left">
+            <p class="mt-4 text-white text-sm sm:text-xl md:text-2xl font-bold mx-4 sm:mx-0">GILRO IS A GREAT SUPER-PROFESSIONAL SERVICE PROVIDER, WHICH BROUGHT NEW TECHNOLOGIES, NEW METHODOLOGY, AND A FRESH PERSPECTIVE TO OUR PROJECT</p>
+            <h6 class="mt-4 text-white text-sm sm:text-xl md:text-1xl mx-4 sm:mx-0">Jack Metiyo Shina, NYC, USA</h6>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-16 bg-black">
+    <div class="ml-20">
+        <h6 class="text-1xl font-bold text-green-500">RECENT NEWS DESK</h6>
+        <h2 class="text-4xl font-bold text-white">LATEST NEWS & <span class="text-green-500">BLOGS</span></h2>
+    </div>
+
+    <div class="container mx-auto mt-10 px-4">
+        <!-- Grid for Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 text-center">
+                <!-- Image -->
+                <img src="team__1.png" alt="Card 1">
+                <p class="text-black mt-5">September 28 , 2019</p>
+                <h3 class="text-2xl font-bold text-black mt-4 hover:text-green-500 transition duration-300">ADDICTION WHEN GAMBLING BECOMES...</h3>
+               
+                <!-- Read More Link with Right Arrow -->
+                <a href="#" class="text-green-500 hover:text-green-700 mt-4 inline-flex items-center justify-center">
+                    <span class="mr-2">Read More</span>
+                    <!-- Right Arrow Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L5.707 9.707a1 1 0 11-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+        
+            <!-- Card 2 -->
+            <div class="bg-white p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 text-center">
+                <!-- Image -->
+                <img src="team__2.png" alt="Card 2">
+                <p class="text-black mt-5">September 28 , 2019</p>
+                <h3 class="text-2xl font-bold text-black mt-4 hover:text-green-500 transition duration-300">HYPNOSIS 12 STEPS TO ACQUIRE MIND POWER... </h3>
+            
+                <!-- Read More Link with Right Arrow -->
+                <a href="#" class="text-green-500 hover:text-green-700 mt-4 inline-flex items-center justify-center">
+                    <span class="mr-2">Read More</span>
+                    <!-- Right Arrow Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L5.707 9.707a1 1 0 11-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            
+            </div>
+        
+            <!-- Card 3 -->
+            <div class="bg-white p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 text-center">
+                <!-- Image -->
+                <img src="team__3.png" alt="Card 3">
+                <p class="text-black mt-5">September 28, 2019</p>
+                <h3 class="text-2xl font-bold text-black mt-4 hover:text-green-500 transition duration-300">
+                    ADDICTION WHEN GAMBLING BECOMES...
+                </h3>
+                
+                <!-- Read More Link with Right Arrow -->
+                <a href="#" class="text-green-500 hover:text-green-700 mt-4 inline-flex items-center justify-center">
+                    <span class="mr-2">Read More</span>
+                    <!-- Right Arrow Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L5.707 9.707a1 1 0 11-1.414-1.414l5-5A1 1 0 0110 3z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+        
+<section class="py-16 bg-black text-center">
+    <div class="container mx-auto px-4">
+        <!-- Email Input & Subscribe Button -->
+        <div class="max-w-md mx-auto bg-none p-4 rounded-lg shadow-lg">
+            <div>
+                <h6 class="text-1xl font-bold text-green-500">NEWSLETTER</h6>
+                <h2 class="text-4xl mt-5 font-bold text-white">
+                    STAY UP TO DATE, SUBSCRIBE TO THE FREE <span class="text-green-500">NEWSLETTER</span>
+                </h2>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center gap-4 mt-8">
+                <!-- Email Input Field -->
+                <input type="email" placeholder="Enter Your Email" class="p-3 w-full sm:w-64 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500">
+                
+                <!-- Subscribe Button -->
+                <button class="w-full sm:w-32 bg-green-500 mt-4 sm:mt-0 text-white p-3 rounded-md hover:bg-black hover:border-2 hover:border-green-500 focus:outline-none transition duration-300">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-16 bg-black">
+    <div class="container mx-auto px-4">
+        <!-- Three Images in One Line -->
+        <div class="flex flex-wrap justify-center gap-8">
+            <!-- Image 1 -->
+            <div class="flex justify-center">
+                <img src="02.png" alt="Image 2" class="w-24 h-24 object-cover rounded-lg shadow-lg">
+            </div>
+
+            <!-- Image 2 -->
+            <div class="flex justify-center">
+                <img src="01.png" alt="Image 1" class="w-24 h-24 object-cover rounded-lg shadow-lg">
+            </div>
+
+            <!-- Image 3 -->
+            <div class="flex justify-center">
+                <img src="download.png" alt="Image 3" class="w-24 h-24 object-cover rounded-lg shadow-lg">
+            </div>
+
+            <!-- Image 4 -->
+            <div class="flex justify-center">
+                <img src="02.png" alt="Image 2" class="w-24 h-24 object-cover rounded-lg shadow-lg">
+            </div>
+
+            <!-- Image 5 -->
+            <div class="flex justify-center">
+                <img src="download.png" alt="Image 3" class="w-24 h-24 object-cover rounded-lg shadow-lg">
+            </div>
+        </div>
+    </div>
+</section>
+
+        
+
+<section class="py-8 bg-black">
+    <div class="container mx-auto px-4">
+        <!-- Navigation Menu -->
+        <nav class="text-center">
+            <ul class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-x-8 sm:space-y-0">
+                <!-- About Me Link -->
+                <li>
+                    <a href="#about" class="text-white text-xl font-semibold hover:text-green-500 transition duration-300">About Me</a>
+                </li>
+                <!-- Career Link -->
+                <li>
+                    <a href="#career" class="text-white text-xl font-semibold hover:text-green-500 transition duration-300">Career</a>
+                </li>
+                <!-- Blog Link -->
+                <li>
+                    <a href="#blog" class="text-white text-xl font-semibold hover:text-green-500 transition duration-300">Blog</a>
+                </li>
+                <!-- Gallery Link -->
+                <li>
+                    <a href="#gallery" class="text-white text-xl font-semibold hover:text-green-500 transition duration-300">Gallery</a>
+                </li>
+                <!-- Contact Me Link -->
+                <li>
+                    <a href="#contact" class="text-white text-xl font-semibold hover:text-green-500 transition duration-300">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-black text-gray-500 py-6 ">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2019 BY <span class="text-green-500">QUOMODOTHEME</span> All RIGHTS RESERVED</p>
+        </div>
+    </footer>
+
+</body>
+</html>
